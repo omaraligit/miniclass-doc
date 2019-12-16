@@ -38,7 +38,6 @@
                         <li><a href="#install">Installation</a></li>
                         <li><a href="#config">Configuration</a></li>
                         <li><a href="#cron">Cron jobs</a></li>
-                        <li><a href="#thank">Thank you</a></li>
                         <li><a href="#bug">Bug and Improvements</a></li>
                     </ul>
                 </div>
@@ -47,6 +46,13 @@
                     <div id="intro">
                         <h4>Introduction : </h4>
                         <p>
+                            First of all, Thank you so much for purchasing ZipCloud and for being my loyal customer. <b>You are awesome!</b>
+                            You are entitled to get free lifetime updates to this product + exceptional support from the author directly.
+                                <br>
+                                <br>
+                            This documentation is to help you regarding each step of customization. Please go through the documentation carefully to understand how this application is made and how to edit this properly. If you have any question don't hesitate to contact me directly.
+                                <br>          
+                                <br>                      
                             <b>ZipCloud</b> is a hosting and file sharing system where users can upload files and get a link that they can share anywhere on the web or email
                             <br> Every user can upload a number of files and they can register for a acout to keep a history of the uploaded files.
                             <br> the admin can manage the duration of the file on the server and the max file size of each file.
@@ -83,8 +89,52 @@
                             <li>Next page will create the admin user enter the information required and remember them</li>
                             <li>Click next and you application is now instaled and everything is setup</li>
                         </ol>
-                        <p>watch this video for a step by step guide</p>
-                        <div class="alert alert-danger">Video here</div>
+                        <!-- <p>watch this video for a step by step guide</p> -->
+                        <!-- <div class="alert alert-danger">Video here</div> -->
+                    </div>
+
+                    <div id="config">
+                        <h4>Configuration</h4>
+                        <p>
+                            After installation and database creation we can move to the next part <b>configuring the application</b> for your special utilisation
+                            <br> you can find bellow how to access conf panel and configuration options
+                        </p>
+                        <ol>
+                            <li>the config page will allow you to change / see : 
+                                <ul>
+                                    <li>Application statistics</li>
+                                    <li>change max file size</li>
+                                    <li>change file life time on the application</li>
+                                    <li>add ads scripts to the applications side bars</li>
+                                </ul>
+                            </li>
+                            <li>First Login with the Admin user you created in the last part</li>
+                            <li>On the menu click Control Panel</li>
+                            <li>On the page you can see the config Options you can chage it to you likings</li>
+                            <li>The changes are applied on the fly so make sur you entring the right values</li>
+                        </ol>
+                        <div><b>this image shows all the config page and how to access it from the top menu</b></div>
+                        <img src="assets/img/config.png" class="w-100 " alt="config page image">
+
+                    </div>
+
+                    <div id="cron">
+                        <h4>Cron Jobs</h4>
+                        <p>To clean up the files from your server you need a working script that chaecks all the time if a file is old enought to delete a file to do that we use CronJobs</p>
+                        <p>The zipcloud application will have a cron job working all the time so to make it do its job you need to add this cronjob script to your web server</p>
+                        <p>In your Server Control pnel go to cronjobs tab and add the daily script like bellow : </p>
+
+                        <div class="alert alert-info">
+                            /usr/local/bin/php /home/<b>your_hostingname</b>/public_html/application/artisan schedule:run >> /dev/null 2>&1
+                        </div>
+
+                        <b>Sample Image</b>
+                        <img src="assets/img/cronjobs.png" class="w-100" alt="">
+                    </div>
+
+                    <div id="bug">
+                        <h4>Bugs and Improvements</h4>
+                        <p>For any bug or suggestion feel free to contact me on <a href="mailto:aitbenaliomar95@gmail.com">my email</a></p>
                     </div>
 
                 </div>
