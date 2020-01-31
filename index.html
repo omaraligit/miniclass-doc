@@ -8,13 +8,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>ZipCloud-Docs - Documentation</title>
+    <title>MiniClass-Docs - Documentation</title>
   </head>
   <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    ZipCloud-Docs 
+                    MiniClass-Docs 
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -46,23 +46,23 @@
                     <div id="intro">
                         <h4>Introduction : </h4>
                         <p>
-                            First of all, Thank you so much for purchasing ZipCloud and for being my loyal customer. <b>You are awesome!</b>
+                            First of all, Thank you so much for purchasing MiniClass and for being my loyal customer. <b>You are awesome!</b>
                             You are entitled to get free lifetime updates to this product + exceptional support from the author directly.
                                 <br>
                                 <br>
                             This documentation is to help you regarding each step of customization. Please go through the documentation carefully to understand how this application is made and how to edit this properly. If you have any question don't hesitate to contact me directly.
-                                <br>          
-                                <br>                      
-                            <b>ZipCloud</b> is a hosting and file sharing system where users can upload files and get a link that they can share anywhere on the web or email
-                            <br> Every user can upload a number of files and they can register for a acout to keep a history of the uploaded files.
-                            <br> the admin can manage the duration of the file on the server and the max file size of each file.
-                            <br> Admin can add ads scripts on the sides of the website to make ads revenu.
+                                <br>
+                                <br>
+                            <b>MiniClass</b> is a solution to separate the <b>help/support</b> section from the core application. this way you can offer this app as a service or use it to manage a team apart and dedicate the needed resources to solve problems "tickets". <br>
+                            think of it as an offshore application where you can handle all the problems your app users have <br>
+                            you can add as many as you need <b>Support team members</b> and resolve your client's problems. clients can have as many tickets they want to ask a question or report a problem, and your support team will take care of the problems and responde to the clients questions and solve the problem they have. <br>
+                            this application can be extended or you can build over it as a template it has the admin section ready for implementation.
                         </p>
                         <!-- website image -->
                     </div>
                     <div id="requ">
                         <h4>Requirements : </h4>
-                        <p>The <b>ZipCloud</b> Web App has a few system requirements,you will need to make sure your server meets the following requirements:</p>
+                        <p>The <b>MiniClass</b> Web App has a few system requirements,you will need to make sure your server meets the following requirements:</p>
                         <ul>
                             <li>PHP &gt;= 7.1.3</li>
                             <li>BCMath PHP Extension</li>
@@ -77,11 +77,11 @@
                     </div>
                     <div id="install">
                         <h4>Installation</h4>
-                        <!-- <p>To install <b>ZipCloud</b> i made a video to make it easy for you to follow the steps <a href="#">link to video</a></p> -->
+                        <!-- <p>To install <b>MiniClass</b> i made a video to make it easy for you to follow the steps <a href="#">link to video</a></p> -->
                         <div>Steps by step install of the application on a shared hosting server : </div>
                         <ol>
-                            <li>From you Cpanel's file explorer Upload the <b>zipcloud.zip</b> to your hosting <b>public_html</b> folder</li>
-                            <li>Extract <b>Zipcloud.zip</b> in your public_html folder and delete the .zip file</li>
+                            <li>From you Cpanel's file explorer Upload the <b>MiniClass.zip</b> to your hosting <b>public_html</b> folder</li>
+                            <li>Extract <b>MiniClass.zip</b> in your public_html folder and delete the .zip file</li>
                             <li>Now create a <b>database user</b> and a <b>database</b> and note down the user's name and password and the database name</li>
                             <li>Visite your website and a installation prompt will guide you to install the application</li>
                             <li>The First page will ask you to enter the database info wee got earlier</li>
@@ -100,28 +100,20 @@
                             <br> you can find bellow how to access conf panel and configuration options
                         </p>
                         <ol>
-                            <li>the config page will allow you to change / see : 
-                                <ul>
-                                    <li>Application statistics</li>
-                                    <li>change max file size</li>
-                                    <li>change file life time on the application</li>
-                                    <li>add ads scripts to the applications side bars</li>
-                                </ul>
-                            </li>
                             <li>First Login with the Admin user you created in the last part</li>
                             <li>On the menu click Control Panel</li>
                             <li>On the page you can see the config Options you can chage it to you likings</li>
                             <li>The changes are applied on the fly so make sur you entring the right values</li>
                         </ol>
-                        <div><b>this image shows all the config page and how to access it from the top menu</b></div>
-                        <img src="assets/img/config.png" class="w-100 " alt="config page image">
+                        <div><b>this image shows all the config page and how to access it from the side menu</b></div>
+                        <img src="assets/img/config.png" class="w-100 border rounded my-3" alt="config page image">
 
                     </div>
 
                     <div id="cron">
                         <h4>Cron Jobs</h4>
                         <p>To clean up the files from your server you need a working script that chaecks all the time if a file is old enought to delete a file to do that we use CronJobs</p>
-                        <p>The zipcloud application will have a cron job working all the time so to make it do its job you need to add this cronjob script to your web server</p>
+                        <p>The MiniClass application will have a cron job working all the time so to make it do its job you need to add this cronjob script to your web server</p>
                         <p>In your Server Control pnel go to cronjobs tab and add the daily script like bellow : </p>
 
                         <div class="alert alert-info">
